@@ -1,0 +1,37 @@
+{
+  "train_period": "2021-01-01 through 2023-06-30 (after available lags)",
+  "test_period": "2023-07-01 through 2023-12-31",
+  "training_rows_used": 230000,
+  "test_rows": 184736,
+  "categorical_features": [
+    "sku_id",
+    "store_id",
+    "channel",
+    "country"
+  ],
+  "numeric_features": [
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_holiday",
+    "lag_stockout_1",
+    "lag_stockout_7mean",
+    "lag_units_1",
+    "lag_units_7mean"
+  ],
+  "scaler_fit": "training only",
+  "categorical_encoder_fit": "training only",
+  "numeric_training_means": {
+    "day_of_week": 2.997495652173913,
+    "month": 5.9457956521739135,
+    "is_weekend": 0.2851130434782609,
+    "is_holiday": 0.012378260869565217,
+    "lag_stockout_1": 0.030291304347826085,
+    "lag_stockout_7mean": 0.030235414078674947,
+    "lag_units_1": 58.98319565217391,
+    "lag_units_7mean": 59.04571668737061
+  },
+  "average_precision": 0.029334360210927952,
+  "probability_threshold": 0.5,
+  "limitations": "Historical previous-observation lags can span several calendar days. Recorded sales are subject to stockout censoring. The evaluation uses actual test-period historical lag inputs (one-step-ahead). No same-day stock_on_hand, units_sold, or lead_time_days is used as a predictor; availability of calendar holiday flags at prediction time is assumed. Class-balanced training and fixed threshold may produce many false alerts. Stockout labels and sales are observational, not proof of causal stock savings."
+}

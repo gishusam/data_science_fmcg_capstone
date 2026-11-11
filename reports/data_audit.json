@@ -1,0 +1,22 @@
+{
+  "rows": 1100000,
+  "columns": 33,
+  "date_start": "2021-01-01",
+  "date_end": "2023-12-31",
+  "countries": 7,
+  "cities": 9,
+  "stores": 13,
+  "skus": 102,
+  "channels": {
+    "Hypermarket": 525600,
+    "Supermarket": 262800,
+    "E-commerce": 262800,
+    "Convenience": 48800
+  },
+  "missing_cells": 0,
+  "full_duplicates": 0,
+  "duplicate_store_sku_day": 0,
+  "duplicate_city_channel_sku_day": 67890,
+  "stockout_rate": 0.030103636363636364,
+  "promotion_rate": 0.08023363636363637
+}

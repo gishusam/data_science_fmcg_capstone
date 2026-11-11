@@ -1,0 +1,3 @@
+model,test_rows,test_prevalence,precision,recall,f1,predicted_positive_rate
+Always predict no stockout,184736,0.02975597609561753,0.0,0.0,0.0,0.0
+Logistic Regression (threshold 0.50),184736,0.02975597609561753,0.029723923429634144,0.5059123158086228,0.056148922853277876,0.5064578641953923

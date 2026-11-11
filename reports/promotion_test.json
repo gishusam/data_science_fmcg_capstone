@@ -1,0 +1,8 @@
+{
+  "mean_units_promo": 104.267582174785,
+  "mean_units_nonpromo": 55.264665038453444,
+  "relative_difference_pct": 88.6695270879414,
+  "welch_t_statistic": 195.04261126272496,
+  "p_value": 0.0,
+  "interpretation": "Observational association only; promotions may be targeted to high-demand stores/dates."
+}

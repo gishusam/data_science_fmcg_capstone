@@ -1,0 +1,11 @@
+{
+  "log_price_coefficient": -0.789795756519775,
+  "log_price_ci95": [
+    -0.9005696524613301,
+    -0.6790218605782198
+  ],
+  "p_value": 2.2416834177081987e-44,
+  "sample_size": 120000,
+  "method": "OLS, log(1+units) ~ log(discount-adjusted price) + promotion + SKU/month/weekday fixed effects; HC3 robust SE",
+  "caution": "Associational approximate elasticity only; store-level variation, endogeneity and stockouts not fully controlled."
+}
